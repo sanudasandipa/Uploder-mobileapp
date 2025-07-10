@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/filesFragment">
+
+    <fragment
+        android:id="@+id/filesFragment"
+        android:name="com.clouduploader.app.ui.fragment.FilesFragment"
+        android:label="Files"
+        tools:layout="@layout/fragment_files" />
+
+    <fragment
+        android:id="@+id/storageFragment"
+        android:name="com.clouduploader.app.ui.fragment.StorageFragment"
+        android:label="Storage"
+        tools:layout="@layout/fragment_storage" />
+
+</navigation>

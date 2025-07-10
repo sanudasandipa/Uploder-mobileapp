@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/filesFragment"
+        android:icon="@drawable/ic_folder"
+        android:title="Files" />
+
+    <item
+        android:id="@+id/storageFragment"
+        android:icon="@drawable/ic_storage"
+        android:title="Storage" />
+
+</menu>
