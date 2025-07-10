@@ -11,12 +11,18 @@ android {
 
     defaultConfig {
         applicationId = "com.clouduploader.app"
-        minSdk = 24
+        minSdk = 21
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true
+        
+        // Add support for different architectures
+        ndk {
+            abiFilters += listOf("armeabi-v7a", "arm64-v8a", "x86", "x86_64")
+        }
     }
 
     buildTypes {
@@ -41,6 +47,12 @@ android {
     buildFeatures {
         viewBinding = true
         dataBinding = true
+    }
+    
+    packagingOptions {
+        resources {
+            excludes += "/META-INF/{AL2.0,LGPL2.1}"
+        }
     }
 }
 
